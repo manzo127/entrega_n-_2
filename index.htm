@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/script.js" defer></script>
+    <title>Entrega_N°2</title>
+</head>
+<body>
+    <header id="head"><h1>Historia de Japón</h1></header>
+    
+    <button id="BTNlogin">Login</button>
+    
+    <!-- Formulario oculto inicialmente -->
+    <form id="loginForm" style="display:none;">
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" required>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Ingresar</button>
+    </form>
+
+    <h2>Desde el feudalismo a la modernidad</h2>
+  
+    <div id="BTNlista">
+        <button id="periodo"> 
+            Períodos históricos de Japón
+        </button>
+        <p id="txt"></p>
+        <br>
+        <button id="memento"> 
+            Momentos importantes de Japón
+        </button>
+    </div>
+
+    <!-- Contenido editable (solo si el usuario hace login) -->
+    <section id="contenidoEditable" style="margin-top:20px; padding:10px; border:1px solid #ccc;">
+        <p id="momentos">
+            Aquí aparecerán los momentos importantes de Japón. 
+            Solo podrás editar este texto si has iniciado sesión.
+        </p>
+    </section>
+    
+    <footer id="footer" style="margin-top:20px;">
+        <button id="BTNcancelar" style="display:none;">Cancelar</button>
+        <button id="BTNguardar" style="display:none;">Guardar</button>
+    </footer>
+</body>
+</html>
